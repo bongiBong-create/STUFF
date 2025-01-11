@@ -1,0 +1,10 @@
+.shop {
+  color: var(--color-light);
+  font-size: 16px;
+  align-items: center;
+  padding-inline: 20px;
+  font-weight: var(--font-weight-semiBold);
+  background-color: var(--color-purple);
+  height: 40px;
+  border-radius: 6px;
+}

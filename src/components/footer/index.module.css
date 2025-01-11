@@ -1,0 +1,39 @@
+.footer {
+  width: 100%;
+  padding-bottom: 24px;
+}
+
+.footer__inner {
+  min-height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-inline: 24px;
+  padding-block: 25px;
+}
+
+.footer__dev {
+  color: var(--color-base);
+}
+
+.footer__dev-name {
+  color: var(--color-dark-purple);
+}
+
+.footer__socials-list {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+}
+
+.footer__socials-list__link {
+  color: var(--color-base);
+}
+
+@media (width < 768px) {
+  .footer__inner {
+    flex-direction: column;
+  }
+
+}

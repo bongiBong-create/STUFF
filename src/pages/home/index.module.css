@@ -1,0 +1,13 @@
+.home {
+  display: grid;
+  grid-template-columns: 1fr minmax(100px, 950px);
+  gap: 20px;
+}
+
+@media (width < 1300px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    
+  }
+}
