@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  padding-bottom: 24px;
+  padding-block: 24px;
 }
 
 .footer__inner {
@@ -17,10 +17,6 @@
   color: var(--color-base);
 }
 
-.footer__dev-name {
-  color: var(--color-dark-purple);
-}
-
 .footer__socials-list {
   display: flex;
   gap: 17px;
@@ -35,5 +31,4 @@
   .footer__inner {
     flex-direction: column;
   }
-
 }

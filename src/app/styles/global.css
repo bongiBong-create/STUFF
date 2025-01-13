@@ -19,6 +19,7 @@
 
   --padding-x: 20px;
   --container-width: 1300px;
+  --transition-dur: 0.3s;
 }
 
 .container {
@@ -47,9 +48,9 @@ body {
   font-weight: var(--font-weight-regular);
   font-size: 13px;
   padding-block: 8px;
-  padding-inline: 24px 147px;
   background-color: var(--color-component);
   border-radius: 6px;
+  transition: all var(--transition-dur);
 }
 
 .input:focus {
@@ -58,6 +59,7 @@ body {
 
 .link, .input:not(:placeholder-shown) {
   color: var(--color-base);
+  transition: all var(--transition-dur);
 }
 
 .logo {
@@ -68,10 +70,15 @@ body {
   width: 100%;
 }
 
+.centered {
+  text-align: center;
+}
+
 .title-medium {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: var(--font-weight-semiBold);
   color: var(--color-light);
+  margin-bottom: 24px;
 }
 
 .title-xl {
@@ -91,28 +98,31 @@ p {
   margin: 0;
 }
 
+ol, ul, li {
+  list-style: none;
+}
+
 button {
   background: transparent;
   border: 0;
   padding-inline: 0;
 }
 
-.description {
-  font-weight: var(--font-weight-medium);
-  font-size: 16px;
-  color: var(--color-base);
-}
-
 .button {
-  color: var(--color-base);
+  color: var(--color-light);
   display: inline-flex;
+  transition: var(--transition-dur) all;
 }
 
-.button:hover {
+.button:hover, .link:hover {
   color: var(--color-dark-purple);
 }
 
 .component {
   border-radius: 6px;
   background-color: var(--color-component);
+}
+
+.accent {
+  color: var(--color-purple);
 }

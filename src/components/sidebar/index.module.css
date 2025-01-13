@@ -1,0 +1,37 @@
+.sidebar {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.sidebar .categories__title {
+  margin-bottom: 0;
+}
+
+.menu {
+  flex: 1;
+}
+
+.item {
+  font-weight: var(--font-weight-medium);
+}
+
+.extra {
+  color: var(--color-base);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.terms {
+  text-decoration: underline;
+}
+
+@media (width < 1300px) {
+  .list {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+}

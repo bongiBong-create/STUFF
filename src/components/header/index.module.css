@@ -17,7 +17,9 @@
 
 .header__logo {
   flex: 0 1 auto;
+  color: var(--color-light);
 }
+
 
 .user {
   display: flex;
@@ -52,13 +54,13 @@
   aspect-ratio: 1;
   background: url("../../assets/search.svg") no-repeat;
   top: 10px;
-  left: 10px;
+  left: 7px;
   z-index: 1;
 }
 
 .search__input {
   width: 100%;
-  padding-inline: 40px;
+  padding-inline: 24px;
 }
 
 .nav {
@@ -67,7 +69,8 @@
   gap: 20px;
 }
 
-
-@media (width < 900px) {
-  .header__content {}
+@media (width < 450px) {
+  .search {
+    max-width: 200px;
+  }
 }

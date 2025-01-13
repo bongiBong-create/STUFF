@@ -1,0 +1,43 @@
+.body {
+  display: flex;
+}
+
+.info {
+  flex: 1;
+  color: var(--color-purple);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.name {
+  font-size: clamp(24px, 3.64vw, 70px);
+  font-weight: var(--font-weight-regular);
+}
+
+.action {
+  font-size: clamp(24px, 8.17vw, 150px);
+  font-weight: var(--font-weight-regular);
+}
+
+.img__box {
+  position: relative;
+  flex: 1;
+  border-radius: 0px 6px 6px 0px;
+}
+
+.text {
+  position: absolute;
+  font-size: clamp(14px, 1.04vw, 20px);
+  bottom: 24px;
+  left: 50%;
+  translate: -50% 0;
+  font-weight: var(--font-weight-medium);
+}
+
+.img {
+  width: 100%;
+}
